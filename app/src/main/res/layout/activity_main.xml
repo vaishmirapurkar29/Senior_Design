@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vaish.appit.MainActivity"
+    android:background="@drawable/gradientbackground"
+    >
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User ID"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="189dp"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/eDOB"
+        android:layout_alignStart="@+id/eDOB" />
+
+    <EditText
+        android:id="@+id/ePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="262dp"
+        android:layout_below="@+id/eName"
+        android:layout_alignLeft="@+id/eName"
+        android:layout_alignStart="@+id/eName"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/eEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="105dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/ePass"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="344dp"
+        android:background="@drawable/button_selector"
+        android:layout_marginBottom="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/eDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="DOB"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/signInButton"
+        android:layout_alignLeft="@+id/eEmail"
+        android:layout_alignStart="@+id/eEmail" />
+
+</RelativeLayout>
